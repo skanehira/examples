@@ -1,4 +1,4 @@
-module github.com/skanehira/exmaples/go-bench
+module github.com/skanehira/examples/go-bench
 
 go 1.16
 
