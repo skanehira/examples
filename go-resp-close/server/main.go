@@ -1,6 +1,7 @@
 package main
 
 import (
+	"fmt"
 	"log"
 	"net/http"
 	"os"
@@ -8,7 +9,7 @@ import (
 
 func main() {
 	pid := os.Getpid()
-	log.Printf("server pid: %d\n", pid)
+	fmt.Printf("server pid: %d\n", pid)
 	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
 		w.Write([]byte("hello"))
 	})

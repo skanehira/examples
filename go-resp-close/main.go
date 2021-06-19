@@ -18,7 +18,7 @@ func countPD(pid int) {
 
 func main() {
 	pid := os.Getpid()
-	log.Printf("client pid: %d\n", pid)
+	fmt.Printf("client pid: %d\n", pid)
 	for i := 0; i < 10; i++ {
 		req, _ := http.NewRequest("POST", "http://localhost:9999", nil)
 		// respのbodyを捨てる
