@@ -6,3 +6,4 @@ go run main.go &
 cd ../
 go build -o out
 ./out
+rm ./out
